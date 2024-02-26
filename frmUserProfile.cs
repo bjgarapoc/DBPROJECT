@@ -103,34 +103,34 @@ namespace DBPROJECT
         private void frmUserProfile_Load(object sender, EventArgs e) //pag open ng form
         {
             this.frmUserProfile_LoadUserData();
-            this.frmUserProfile_GetPhotofromField();
+            this.frmUserProfile_GetPhotofromField(); 
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        private void btnClear_Click(object sender, EventArgs e) 
         {
             if (csMessageBox.Show("Erase User Photo?", "Please confirm.", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 if (Globals.glOpenSqlConn())
-                {
+                { 
                     SqlCommand cmd = new SqlCommand("spGetUserProfile", Globals.sqlconn);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@liduser", this.iduser);
 
                     cmd.ExecuteNonQuery();
                     this.pictBoxUser.Image = null;
-                }
+                }  
                     csMessageBox.Show("User Photo Erased.", "Warning", MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
-        }
+        } 
 
-        private void btnLoadPhoto_Click(object sender, EventArgs e)
+        private void btnLoadPhoto_Click(object sender, EventArgs e) 
         {
             OpenFileDialog openPhoto = new OpenFileDialog();
             openPhoto.Filter = "Choose Image(*.jpg; *.png; *.gif)|*.jpg; *.png; *.gif";
-            if (openPhoto.ShowDialog() == DialogResult.OK)
+            if (openPhoto.ShowDialog() == DialogResult.OK) 
             {
                 pictBoxUser.Image = Image.FromFile(openPhoto.FileName);
-            }
+            } 
         }
     }
 }
