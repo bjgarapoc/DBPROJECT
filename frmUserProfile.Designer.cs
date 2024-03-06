@@ -53,7 +53,6 @@ namespace DBPROJECT
             // 
             // pictBoxUser
             // 
-            this.pictBoxUser.Image = ((System.Drawing.Image)(resources.GetObject("pictBoxUser.Image")));
             this.pictBoxUser.Location = new System.Drawing.Point(98, 12);
             this.pictBoxUser.Name = "pictBoxUser";
             this.pictBoxUser.Size = new System.Drawing.Size(256, 237);

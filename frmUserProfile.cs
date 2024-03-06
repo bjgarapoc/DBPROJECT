@@ -114,7 +114,7 @@ namespace DBPROJECT
             {
                 if (Globals.glOpenSqlConn())
                 {
-                    SqlCommand cmd = new SqlCommand("spGetUserProfile", Globals.sqlconn);
+                    SqlCommand cmd = new SqlCommand("spClearUserPhoto", Globals.sqlconn);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@liduser", this.iduser);
 
