@@ -101,6 +101,46 @@ namespace DBPROJECT
         {
            Userfrm.Dispose();
         }
+
+        frmCustomers Customersfrm;
+        private void btnCustomers_Click(object sender, EventArgs e)
+        {
+            Customersfrm = new frmCustomers();
+            Customersfrm.FormClosed += Customersfrm_FormClosed;
+            Customersfrm.MdiParent = this;
+            Customersfrm.Show();
+        }
+
+        private void Customersfrm_FormClosed(object sender, EventArgs e)
+        {
+            Customersfrm.Dispose();
+        }
+
+        frmVendors Vendorsfrm;
+        private void btnVendors_Click(object sender, EventArgs e)
+        {
+            Vendorsfrm = new frmVendors();
+            Vendorsfrm.FormClosed += Vendorsfrm_FormClosed;
+            Vendorsfrm.MdiParent = this;
+            Vendorsfrm.Show();
+        }
+        private void Vendorsfrm_FormClosed(object sender, EventArgs e)
+        {
+            Vendorsfrm.Dispose();
+        }
+
+        frmItems Itemsfrm;
+        private void btnItems_Click(object sender, EventArgs e)
+        {
+            Itemsfrm = new frmItems();
+            Itemsfrm.FormClosed += Itemsfrm_FormClosed;
+            Itemsfrm.MdiParent = this;
+            Itemsfrm.Show();
+        }
+        private void Itemsfrm_FormClosed(object sender, EventArgs e)
+        {
+            Itemsfrm.Dispose();
+        }
     }
 
 }
