@@ -43,8 +43,8 @@ namespace DBPROJECT
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.txtSearchCustomers = new System.Windows.Forms.ToolStripTextBox();
+            this.btnSearchCustomers = new System.Windows.Forms.ToolStripButton();
             this.dgvCustomers = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.bNavCustomers)).BeginInit();
             this.bNavCustomers.SuspendLayout();
@@ -68,8 +68,8 @@ namespace DBPROJECT
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.toolStripTextBox1,
-            this.toolStripButton1});
+            this.txtSearchCustomers,
+            this.btnSearchCustomers});
             this.bNavCustomers.Location = new System.Drawing.Point(0, 0);
             this.bNavCustomers.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bNavCustomers.MoveLastItem = this.bindingNavigatorMoveLastItem;
@@ -167,20 +167,21 @@ namespace DBPROJECT
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // toolStripTextBox1
+            // txtSearchCustomers
             // 
-            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(150, 25);
+            this.txtSearchCustomers.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSearchCustomers.Name = "txtSearchCustomers";
+            this.txtSearchCustomers.Size = new System.Drawing.Size(150, 25);
             // 
-            // toolStripButton1
+            // btnSearchCustomers
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "toolStripButton1";
+            this.btnSearchCustomers.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnSearchCustomers.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchCustomers.Image")));
+            this.btnSearchCustomers.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSearchCustomers.Name = "btnSearchCustomers";
+            this.btnSearchCustomers.Size = new System.Drawing.Size(23, 22);
+            this.btnSearchCustomers.Text = "toolStripButton1";
+            this.btnSearchCustomers.Click += new System.EventHandler(this.btnSearchCustomers_Click);
             // 
             // dgvCustomers
             // 
@@ -193,6 +194,7 @@ namespace DBPROJECT
             this.dgvCustomers.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvCustomers_RowPostPaint);
             this.dgvCustomers.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvCustomers_RowPrePaint);
             this.dgvCustomers.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.dgvCustomers_UserDeletingRow);
+            this.dgvCustomers.DoubleClick += new System.EventHandler(this.dgvCustomers_DoubleClick);
             // 
             // frmCustomers
             // 
@@ -229,8 +231,8 @@ namespace DBPROJECT
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripTextBox txtSearchCustomers;
+        private System.Windows.Forms.ToolStripButton btnSearchCustomers;
         private System.Windows.Forms.DataGridView dgvCustomers;
     }
 }

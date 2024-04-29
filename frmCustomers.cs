@@ -188,7 +188,7 @@ namespace DBPROJECT
                             newcustid = long.Parse(dt.Rows[0][0].ToString());
                             // save it to the grid
                             if (custid == 0)
-                                row.Cells["idCustomers"].Value = newcustid;
+                                row.Cells["idCustomer"].Value = newcustid;
 
                         }
                         catch (Exception ex)
@@ -206,5 +206,82 @@ namespace DBPROJECT
                 Globals.glCloseSqlConn();
             }
         }
+
+        private Boolean SearchName(String searchVal)
+        {
+            bool resultVal = false;
+            int rowIndex = -1;
+
+            searchVal = searchVal.Trim().ToUpper();
+            if (searchVal != "")
+            {
+                this.bNavCustomers.MoveFirstItem.PerformClick();
+
+                foreach (DataGridViewRow row in dgvCustomers.Rows)
+                {
+                    try
+                    {
+                        if (row.Cells["nameCustomer"].Value.ToString().StartsWith(searchVal))
+                        {
+                            rowIndex = row.Index;
+                            dgvCustomers.Rows[row.Index].Selected = true;
+                            resultVal = true;
+                            break;
+                        }
+                        this.bNavCustomers.MoveNextItem.PerformClick();
+                    }
+                    catch
+                    {
+                        break;
+                    }
+                } // foreach
+                if (!resultVal)
+                    csMessageBox.Show("Record not found.", "Search Result",
+                      MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            } // if
+            return resultVal;
+        }
+
+        private void btnSearchCustomers_Click(object sender, EventArgs e)
+        {
+            String searchVal = txtSearchCustomers.Text.Trim().ToUpper();
+
+            if (this.SearchName(searchVal))
+            {
+                this.txtSearchCustomers.Clear();
+                this.txtSearchCustomers.Focus();
+
+            }
+            else
+            {
+                this.txtSearchCustomers.Focus();
+            }
+
+        }
+
+        private frmEditCustomer EditCustomerfrm;
+        private void dgvCustomers_DoubleClick(object sender, EventArgs e)
+        {
+            long ccid;
+
+            DataGridViewRow row = dgvCustomers.CurrentRow;
+
+            if (row.Cells[this.idcolumn].Value == DBNull.Value)
+                ccid = 0;
+            else
+                ccid = Convert.ToInt64(row.Cells[this.idcolumn].Value);
+
+
+            if (ccid != 0)
+            {
+                EditCustomerfrm = new frmEditCustomer(ccid);
+                EditCustomerfrm.MdiParent = this.MdiParent;
+                EditCustomerfrm.Show();
+
+            }
+        }
     }
-}
+ }
+
+

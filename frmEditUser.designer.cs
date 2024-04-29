@@ -311,7 +311,7 @@ namespace DBPROJECT
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnSave.ImageIndex = 0;
             this.btnSave.ImageList = this.imageList1;
-            this.btnSave.Location = new System.Drawing.Point(234, 231);
+            this.btnSave.Location = new System.Drawing.Point(229, 231);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(92, 23);
             this.btnSave.TabIndex = 5;
