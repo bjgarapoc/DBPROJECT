@@ -31,164 +31,47 @@ namespace DBPROJECT
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUserEmail));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtSubject = new System.Windows.Forms.TextBox();
-            this.txtEmailSendto = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtSMTPPort = new System.Windows.Forms.TextBox();
-            this.txtSMTPHost = new System.Windows.Forms.TextBox();
-            this.txtEmailfrom = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txtMessage = new System.Windows.Forms.RichTextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnLoad = new System.Windows.Forms.ToolStripButton();
             this.btnSave = new System.Windows.Forms.ToolStripButton();
             this.btnSend = new System.Windows.Forms.ToolStripButton();
             this.tspClear = new System.Windows.Forms.ToolStripButton();
+            this.tsbAddAttachment = new System.Windows.Forms.ToolStripButton();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.tsbAddAttachment = new System.Windows.Forms.ToolStripButton();
-            this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmRremoveAttachment = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.txtMessage = new System.Windows.Forms.RichTextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtEmailSendto = new System.Windows.Forms.TextBox();
+            this.txtSubject = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtEmailfrom = new System.Windows.Forms.TextBox();
+            this.txtSMTPHost = new System.Windows.Forms.TextBox();
+            this.txtSMTPPort = new System.Windows.Forms.TextBox();
+            this.toolStrip1.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.txtSubject);
-            this.groupBox1.Controls.Add(this.txtEmailSendto);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 85);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(888, 74);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Email Recipient";
-            // 
-            // txtSubject
-            // 
-            this.txtSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubject.Location = new System.Drawing.Point(97, 46);
-            this.txtSubject.Name = "txtSubject";
-            this.txtSubject.Size = new System.Drawing.Size(701, 22);
-            this.txtSubject.TabIndex = 2;
-            this.txtSubject.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmailSendto_KeyDown);
-            // 
-            // txtEmailSendto
-            // 
-            this.txtEmailSendto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailSendto.Location = new System.Drawing.Point(97, 20);
-            this.txtEmailSendto.Name = "txtEmailSendto";
-            this.txtEmailSendto.Size = new System.Drawing.Size(347, 22);
-            this.txtEmailSendto.TabIndex = 0;
-            this.txtEmailSendto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmailSendto_KeyDown);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Subject";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Send to";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.txtSMTPPort);
-            this.groupBox2.Controls.Add(this.txtSMTPHost);
-            this.groupBox2.Controls.Add(this.txtEmailfrom);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(12, 6);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(888, 75);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Email Sender";
-            // 
-            // txtSMTPPort
-            // 
-            this.txtSMTPPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSMTPPort.Location = new System.Drawing.Point(590, 43);
-            this.txtSMTPPort.Name = "txtSMTPPort";
-            this.txtSMTPPort.Size = new System.Drawing.Size(208, 22);
-            this.txtSMTPPort.TabIndex = 1002;
-            this.txtSMTPPort.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmailSendto_KeyDown);
-            // 
-            // txtSMTPHost
-            // 
-            this.txtSMTPHost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSMTPHost.Location = new System.Drawing.Point(590, 15);
-            this.txtSMTPHost.Name = "txtSMTPHost";
-            this.txtSMTPHost.Size = new System.Drawing.Size(208, 22);
-            this.txtSMTPHost.TabIndex = 1001;
-            this.txtSMTPHost.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmailSendto_KeyDown);
-            // 
-            // txtEmailfrom
-            // 
-            this.txtEmailfrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailfrom.Location = new System.Drawing.Point(97, 15);
-            this.txtEmailfrom.Name = "txtEmailfrom";
-            this.txtEmailfrom.Size = new System.Drawing.Size(347, 22);
-            this.txtEmailfrom.TabIndex = 1000;
-            this.txtEmailfrom.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmailSendto_KeyDown);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(507, 45);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 16);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "SMTP Port";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(507, 18);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 16);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "SMTP Host";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(18, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 16);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "From";
             // 
             // imageList1
             // 
@@ -201,25 +84,6 @@ namespace DBPROJECT
             this.imageList1.Images.SetKeyName(4, "txt-file-icon-1193.png");
             this.imageList1.Images.SetKeyName(5, "txt-file-icon-1203.png");
             this.imageList1.Images.SetKeyName(6, "eraser-icon-23405.png");
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.txtMessage);
-            this.groupBox3.Location = new System.Drawing.Point(12, 165);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(584, 237);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Message";
-            // 
-            // txtMessage
-            // 
-            this.txtMessage.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMessage.Location = new System.Drawing.Point(6, 19);
-            this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(574, 213);
-            this.txtMessage.TabIndex = 3;
-            this.txtMessage.Text = "";
             // 
             // toolStrip1
             // 
@@ -281,9 +145,37 @@ namespace DBPROJECT
             this.tspClear.Text = "Clear";
             this.tspClear.Click += new System.EventHandler(this.tspClear_Click);
             // 
+            // tsbAddAttachment
+            // 
+            this.tsbAddAttachment.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.tsbAddAttachment.Image = ((System.Drawing.Image)(resources.GetObject("tsbAddAttachment.Image")));
+            this.tsbAddAttachment.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbAddAttachment.Name = "tsbAddAttachment";
+            this.tsbAddAttachment.Size = new System.Drawing.Size(115, 42);
+            this.tsbAddAttachment.Text = "Add Attachment";
+            this.tsbAddAttachment.Click += new System.EventHandler(this.tsbAddAttachment_Click);
+            // 
             // saveFileDialog1
             // 
             this.saveFileDialog1.CheckPathExists = false;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmRremoveAttachment});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(184, 26);
+            // 
+            // tsmRremoveAttachment
+            // 
+            this.tsmRremoveAttachment.Name = "tsmRremoveAttachment";
+            this.tsmRremoveAttachment.Size = new System.Drawing.Size(183, 22);
+            this.tsmRremoveAttachment.Text = "Remove Attachment";
+            this.tsmRremoveAttachment.Click += new System.EventHandler(this.tsmRremoveAttachment_Click);
+            // 
+            // openFileDialog2
+            // 
+            this.openFileDialog2.FileName = "openFileDialog2";
             // 
             // groupBox4
             // 
@@ -306,33 +198,194 @@ namespace DBPROJECT
             this.listBox1.Size = new System.Drawing.Size(271, 208);
             this.listBox1.TabIndex = 0;
             // 
-            // tsbAddAttachment
+            // groupBox3
             // 
-            this.tsbAddAttachment.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.tsbAddAttachment.Image = ((System.Drawing.Image)(resources.GetObject("tsbAddAttachment.Image")));
-            this.tsbAddAttachment.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbAddAttachment.Name = "tsbAddAttachment";
-            this.tsbAddAttachment.Size = new System.Drawing.Size(115, 42);
-            this.tsbAddAttachment.Text = "Add Attachment";
-            this.tsbAddAttachment.Click += new System.EventHandler(this.tsbAddAttachment_Click);
+            this.groupBox3.Controls.Add(this.txtMessage);
+            this.groupBox3.Location = new System.Drawing.Point(12, 165);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(584, 237);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Message";
             // 
-            // openFileDialog2
+            // richTextBox1
             // 
-            this.openFileDialog2.FileName = "openFileDialog2";
+            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(6, 19);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(574, 213);
+            this.richTextBox1.TabIndex = 3;
+            this.richTextBox1.Text = "";
             // 
-            // contextMenuStrip1
+            // txtMessage
             // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmRremoveAttachment});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(184, 26);
+            this.txtMessage.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMessage.Location = new System.Drawing.Point(6, 19);
+            this.txtMessage.Name = "txtMessage";
+            this.txtMessage.Size = new System.Drawing.Size(574, 213);
+            this.txtMessage.TabIndex = 3;
+            this.txtMessage.Text = "";
             // 
-            // tsmRremoveAttachment
+            // groupBox1
             // 
-            this.tsmRremoveAttachment.Name = "tsmRremoveAttachment";
-            this.tsmRremoveAttachment.Size = new System.Drawing.Size(183, 22);
-            this.tsmRremoveAttachment.Text = "Remove Attachment";
-            this.tsmRremoveAttachment.Click += new System.EventHandler(this.tsmRremoveAttachment_Click);
+            this.groupBox1.Controls.Add(this.txtSubject);
+            this.groupBox1.Controls.Add(this.txtEmailSendto);
+            this.groupBox1.Location = new System.Drawing.Point(12, 85);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(888, 74);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Email Recipient";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(97, 46);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(701, 22);
+            this.textBox4.TabIndex = 2;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(97, 20);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(347, 22);
+            this.textBox5.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(507, 18);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(77, 16);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "SMTP Host";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(507, 45);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 16);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "SMTP Port";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(507, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 16);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "SMTP Port";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(507, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 16);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "SMTP Host";
+            // 
+            // txtEmailSendto
+            // 
+            this.txtEmailSendto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmailSendto.Location = new System.Drawing.Point(97, 20);
+            this.txtEmailSendto.Name = "txtEmailSendto";
+            this.txtEmailSendto.Size = new System.Drawing.Size(347, 22);
+            this.txtEmailSendto.TabIndex = 0;
+            this.txtEmailSendto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmailSendto_KeyDown);
+            // 
+            // txtSubject
+            // 
+            this.txtSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSubject.Location = new System.Drawing.Point(97, 46);
+            this.txtSubject.Name = "txtSubject";
+            this.txtSubject.Size = new System.Drawing.Size(701, 22);
+            this.txtSubject.TabIndex = 2;
+            this.txtSubject.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmailSendto_KeyDown);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txtSMTPPort);
+            this.groupBox2.Controls.Add(this.txtSMTPHost);
+            this.groupBox2.Controls.Add(this.txtEmailfrom);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Location = new System.Drawing.Point(12, 6);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(888, 75);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Email Sender";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(590, 43);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(208, 22);
+            this.textBox1.TabIndex = 1002;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(590, 15);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(208, 22);
+            this.textBox2.TabIndex = 1001;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(97, 15);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(347, 22);
+            this.textBox3.TabIndex = 1000;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(18, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(39, 16);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "From";
+            // 
+            // txtEmailfrom
+            // 
+            this.txtEmailfrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmailfrom.Location = new System.Drawing.Point(97, 15);
+            this.txtEmailfrom.Name = "txtEmailfrom";
+            this.txtEmailfrom.Size = new System.Drawing.Size(347, 22);
+            this.txtEmailfrom.TabIndex = 1000;
+            this.txtEmailfrom.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmailSendto_KeyDown);
+            // 
+            // txtSMTPHost
+            // 
+            this.txtSMTPHost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSMTPHost.Location = new System.Drawing.Point(590, 15);
+            this.txtSMTPHost.Name = "txtSMTPHost";
+            this.txtSMTPHost.Size = new System.Drawing.Size(208, 22);
+            this.txtSMTPHost.TabIndex = 1001;
+            this.txtSMTPHost.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmailSendto_KeyDown);
+            // 
+            // txtSMTPPort
+            // 
+            this.txtSMTPPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSMTPPort.Location = new System.Drawing.Point(590, 43);
+            this.txtSMTPPort.Name = "txtSMTPPort";
+            this.txtSMTPPort.Size = new System.Drawing.Size(208, 22);
+            this.txtSMTPPort.TabIndex = 1002;
+            this.txtSMTPPort.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmailSendto_KeyDown);
             // 
             // frmUserEmail
             // 
@@ -351,48 +404,53 @@ namespace DBPROJECT
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Email User";
             this.Load += new System.EventHandler(this.frmUserEmail_Load);
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RichTextBox txtMessage;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnLoad;
         private System.Windows.Forms.ToolStripButton btnSave;
         private System.Windows.Forms.ToolStripButton btnSend;
-        private System.Windows.Forms.TextBox txtSubject;
-        private System.Windows.Forms.TextBox txtEmailSendto;
-        private System.Windows.Forms.TextBox txtSMTPPort;
-        private System.Windows.Forms.TextBox txtSMTPHost;
-        private System.Windows.Forms.TextBox txtEmailfrom;
         private System.Windows.Forms.ToolStripButton tspClear;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ToolStripButton tsbAddAttachment;
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem tsmRremoveAttachment;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RichTextBox txtMessage;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox txtSubject;
+        private System.Windows.Forms.TextBox txtEmailSendto;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox txtSMTPPort;
+        private System.Windows.Forms.TextBox txtSMTPHost;
+        private System.Windows.Forms.TextBox txtEmailfrom;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
